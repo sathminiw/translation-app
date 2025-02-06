@@ -1,6 +1,23 @@
 @import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.mic-icon.active {
+  color: red;
 }
