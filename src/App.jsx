@@ -97,21 +97,20 @@ const App = () => {
         min-h-screen flex flex-col transition-colors duration-300
       `}
     >
-      <header className="relative py-10 bg-gradient-to-r from-blue-400 to-purple-500 shadow-lg">
+      <header className="relative h-[50px] flex justify-center items-center py-24 bg-gradient-to-r from-blue-400 to-purple-500 shadow-lg">
         <button
           onClick={() => setDarkMode(!darkMode)}
           className="
-            absolute top-4 right-4 p-2 bg-white bg-opacity-20 hover:bg-opacity-30
+            absolute top-3 right-8 p-2 bg-white bg-opacity-20 hover:bg-opacity-30
             text-white rounded-lg transition-all duration-300
           "
         >
           {darkMode ? <FaSun size={24} /> : <FaMoon size={24} />}
         </button>
-
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl font-bold text-white mb-2">
+        <div className="mx-auto px-4 text-center">
+          <p className="text-2xl font-bold text-white mb-2">
             Language Translator
-          </h1>
+          </p>
         </div>
       </header>
 
